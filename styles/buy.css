@@ -3,7 +3,9 @@
     align-items: center;
     justify-content: space-between;
 
-    margin-top: 70px;
+    margin-top: 60px;
+    opacity: 1 !important;
+    z-index: 10 !important;
 }
 
 .buy p {
