@@ -1,0 +1,90 @@
+.buy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 70px;
+}
+
+.buy p {
+    font-size: 60px;
+    font-family: "Inter";
+}
+
+.buy p sup {
+    font-size: 30px;
+    color: var(--red-dark);
+    margin-right: 6px;
+}
+
+.buy-button {
+    display: flex;
+    column-gap: 12px;
+}
+
+.buy-button span {
+    height: 70px;
+    background: var(--red-dark);
+
+    transform: skew(-30deg);
+}
+
+.buy-button span:nth-child(1) {
+    width: 8px;
+}
+
+.buy-button span:nth-child(2) {
+    width: 16px;
+}
+
+.buy-button span:nth-child(3) {
+    width: 300px;
+}
+
+.buy-button span button {
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    transform: skew(+30deg);
+}
+
+@media(max-width: 1266px) {
+    .buy {
+        margin-top: 48px;
+    }
+
+    .buy p {
+        font-size: 40px;
+    }
+
+    .buy p sup {
+        font-size: 24px;
+    }
+
+    .buy-button span {
+        height: 50px;
+    }
+
+    .buy-button span:nth-child(3) {
+        width: 250px;
+    }
+
+    .buy-button span button {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 768px) {
+    .buy {
+        margin-top: 24px;
+
+        flex-direction: column;
+        row-gap: 24px;
+    }
+}

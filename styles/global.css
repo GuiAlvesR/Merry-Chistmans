@@ -1,0 +1,93 @@
+@import url(./header.css);
+@import url(./section.css);
+@import url(./buy.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text: #f1f1f1;
+  --red: #C51212;
+  --red-dark: #8A010B;
+
+  --shadow-image: drop-shadow(rgba(0, 0, 0, 0.35) 0px 3px 8px);
+  --background-body: linear-gradient(125deg, var(--red-dark) 36%, var(--red) 36%);
+}
+
+body,
+button,
+a {
+  color: var(--text);
+  font: 400 1rem "Montserrat", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  padding: 32px 64px 0;
+  background: var(--background-body);
+}
+
+#container-confetti {
+  position: fixed;
+  inset: 0;
+  width: 90%;
+  height: 90%;
+  z-index: 10;
+  margin: auto;
+  pointer-events: none;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  column-gap: 64px;
+
+  flex: 1;
+}
+
+main img {
+  width: 100%;
+  max-width: 900pz;
+  height: auto;
+
+  align-self: flex-end;
+  filter: var(--shadow-image);
+}
+
+@media(max-width: 1266px) {
+  body {
+    padding: 24px 0 0;
+  }
+
+  main {
+    column-gap: 24px;
+  }
+
+  main img {
+    width: auto;
+    min-width: 400px;
+  }
+}
+
+@media(max-width: 768px) {
+  body {
+    padding: 32px;
+    background: var(--red);
+  }
+
+  main {
+    column-gap: 0;
+  }
+
+  main img {
+    display: none;
+  }
+}
