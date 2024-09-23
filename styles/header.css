@@ -1,78 +1,106 @@
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 
 .logo img {
-    width: auto;
-    height: 60px;
+  width: auto;
+  height: 60px;
 }
 
 .logo div {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
 }
 
 .logo div strong {
-    font-size: 24px;
-    letter-spacing: 0.5px;
-    border-bottom: 1px solid var(--text);
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--text);
 }
 
 .logo div p {
-    font-size: 15px;
-    font-weight: 300;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .cart {
-    position: relative;
-    margin-right: 32px;
+  position: relative;
+  margin-right: 32px;
 }
 
 .cart img {
-    width: auto;
-    height: 40px;
+  width: auto;
+  height: 40px;
 }
 
 #cart-count {
-    display: none;
+  display: none;
 
-    position: absolute;
+  position: absolute;
+  top: -8px;
+  right: -10px;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: var(--red-dark);
+
+  text-align: center;
+  font: 16px;
+  line-height: 1.8;
+  font-family: Inter, sans-serif;
+  font-weight: 300;
+}
+
+@media (max-width: 1266px) {
+  header {
+    padding: 0 24px;
+  }
+
+  .cart {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0;
+  }
+}
+
+@media (max-width: 548px) {
+  .logo {
+    column-gap: 5px;
+  }
+
+  .logo img {
+    width: auto;
+    height: 40px;
+  }
+
+  .logo div strong {
+    font-size: 14px;
+  }
+
+  .cart img {
+    height: 40px;
+  }
+
+  #cart-count {
     top: -8px;
     right: -10px;
 
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    background: var(--red-dark);
-
-    text-align: center;
-    font: 16px;
-    line-height: 1.8;
-    font-family: Inter, sans-serif;
-    font-weight: 300;
-}
-
-@media(max-width: 1266px) {
-    header {
-        padding: 0 24px;
-    }
-
-    .cart {
-        margin-right: 0;
-    }
-}
-
-@media(max-width: 768px) {
-    header {
-        padding: 0;
-    }
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+  }
 }

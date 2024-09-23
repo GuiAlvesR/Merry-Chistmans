@@ -90,3 +90,29 @@
         row-gap: 24px;
     }
 }
+
+@media(max-width: 548px) {
+    .buy {
+        margin-top: 36px;
+    }
+
+    .buy p {
+        font-size: 28px;
+    }
+
+    .buy p sup {
+        font-size: 18px;
+    }
+
+    .buy-button span {
+        height: 45px;
+    }
+
+    .buy-button span:nth-child(3) {
+        width: 200px;
+    }
+
+    .buy-button span button {
+        font-size: 14px;
+    }
+}

@@ -10,11 +10,15 @@
 
 :root {
   --text: #f1f1f1;
-  --red: #C51212;
-  --red-dark: #8A010B;
+  --red: #c51212;
+  --red-dark: #8a010b;
 
   --shadow-image: drop-shadow(rgba(0, 0, 0, 0.35) 0px 3px 8px);
-  --background-body: linear-gradient(125deg, var(--red-dark) 36%, var(--red) 36%);
+  --background-body: linear-gradient(
+    125deg,
+    var(--red-dark) 36%,
+    var(--red) 36%
+  );
 }
 
 body,
@@ -62,7 +66,7 @@ main img {
   filter: var(--shadow-image);
 }
 
-@media(max-width: 1266px) {
+@media (max-width: 1266px) {
   body {
     padding: 24px 0 0;
   }
@@ -77,7 +81,7 @@ main img {
   }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   body {
     padding: 32px;
     background: var(--red);
@@ -89,5 +93,11 @@ main img {
 
   main img {
     display: none;
+  }
+}
+
+@media (max-width: 548px) {
+  body {
+    padding: 24px;
   }
 }
