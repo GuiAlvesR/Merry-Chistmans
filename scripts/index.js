@@ -8,17 +8,15 @@ audioMerrychhistmas.volume = 0.4;
 audioConfetti.volume = 0.2;
 
 function addItem() {
-  document.addEventListener("click", () => {
-    if (count === 0) {
-      countElement.style.display = "block";
-    }
+  if (count === 0) {
+    countElement.style.display = "block";
+  }
 
-    count++;
-    countElement.innerText = count;
+  count++;
+  countElement.innerText = count;
 
-    audioMerrychhistmas.play();
-    audioConfetti.play();
+  audioMerrychhistmas.play();
+  audioConfetti.play();
 
-    handleConfettiEffect();
-  });
+  handleConfettiEffect();
 }

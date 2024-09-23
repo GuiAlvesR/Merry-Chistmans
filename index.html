@@ -17,21 +17,21 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/favicon/apple-touch-icon.png"
+      href="favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/favicon/favicon-32x32.png"
+      href="favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/favicon/favicon-16x16.png"
+      href="favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.12.0/tsparticles.bundle.min.js"
       integrity="sha512-W/UhCgUnBrqWd6HtR1wS+twNkVYvwxB1Hqtm9d/0HOWynEcr7t1BOQn1x55ziHQJtn+tU0Fzih1SAawRr6YFmA=="
@@ -39,12 +39,15 @@
       referrerpolicy="no-referrer"
     ></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-    <audio src="./assets/audio/merry-christmas.mp3"></audio>
-    <audio src="./assets/audio/confetti.wav"></audio>
   </head>
 
   <body>
+    <audio controls>
+      <source src="./assets/audio/confetti.wav" type="audio/wav" />
+    </audio>
+    <audio controls>
+      <source src="./assets/audio/merry-christmas.mp3" type="audio/mp3" />
+    </audio>
     <span id="container-confetti"></span>
 
     <header
